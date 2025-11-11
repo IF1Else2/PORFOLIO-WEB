@@ -1,0 +1,24 @@
+.background-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30,30,30,0.6);
+  z-index: -1; 
+  border-radius: 0; 
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  .content-box h1 {
+    font-size: 2.4rem;
+  }
+  .content-box p {
+    font-size: 1.1rem;
+  }
+}
+

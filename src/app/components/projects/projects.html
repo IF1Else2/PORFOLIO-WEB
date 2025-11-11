@@ -1,0 +1,61 @@
+<h1>Mis Proyectos</h1>
+<div class="projects-row">
+
+  <!-- Proyecto 1 -->
+  <div class="project-card">
+    <h3>CuidaBot</h3>
+    <div class="carousel-container">
+      <button class="carousel-btn prev" (click)="prevImage()">&#10094;</button>
+      <img [src]="projectImages[currentIndex]" 
+           [alt]="'Imagen ' + (currentIndex + 1)"
+           class="carousel-image">
+      <button class="carousel-btn next" (click)="nextImage()">&#10095;</button>
+    </div>
+    <p>Aplicación de escritorio para optimizar el rendimiento del ordenador.</p>
+    <div class="habilities-used">
+      <span class="tech-pill">Java</span>
+      <span class="tech-pill">JavaFX</span>
+      <span class="tech-pill">MySQL</span>
+      <span class="tech-pill">CSS</span>
+    </div>
+  </div>
+
+  <!-- Proyecto 2 -->
+  <div class="project-card">
+    <h3>Gestor de Informes</h3>
+    <div class="carousel-container">
+      <button class="carousel-btn prev" (click)="prevImage1()">&#10094;</button>
+      <img [src]="projectImages1[currentIndex1]" 
+           [alt]="'Imagen ' + (currentIndex1 + 1)"
+           class="carousel-image">
+      <button class="carousel-btn next" (click)="nextImage1()">&#10095;</button>
+    </div>
+    <p>Aplicación de escritorio para buscar proyectos y generar informes Excel.</p>
+    <div class="habilities-used">
+      <span class="tech-pill">Java</span>
+      <span class="tech-pill">JavaFX</span>
+      <span class="tech-pill">MySQL</span>
+      <span class="tech-pill">CSS</span>
+    </div>
+  </div>
+
+  <!-- Proyecto 3 -->
+  <div class="project-card">
+    <h3>Control Horario</h3>
+    <div class="carousel-container">
+      <button class="carousel-btn prev" (click)="prevImage2()">&#10094;</button>
+      <img [src]="projectImages2[currentIndex2]" 
+           [alt]="'Imagen ' + (currentIndex2 + 1)"
+           class="carousel-image">
+      <button class="carousel-btn next" (click)="nextImage2()">&#10095;</button>
+    </div>
+    <p>Aplicación de escritorio para registrar jornada y generar informes PDF.</p>
+    <div class="habilities-used">
+      <span class="tech-pill">Java</span>
+      <span class="tech-pill">JavaFX</span>
+      <span class="tech-pill">MySQL</span>
+      <span class="tech-pill">CSS</span>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,136 @@
+/* -------------------------------- */
+/* Sección About Me                  */
+/* -------------------------------- */
+.about-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap; /* para responsive */
+  background: linear-gradient(135deg, rgba(255,64,129,0.1), rgba(255,64,129,0.03));
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Imagen de perfil */
+.about-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Texto */
+.about-text {
+  flex: 2 1 400px;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  color: #ff4081;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ff79b0;
+  margin-bottom: 10px;
+}
+
+.about-text hr {
+  border: none;
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(to right, #ff4081, #ff79b0);
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ff4081;
+  font-weight: 600;
+}
+
+.about-text p {
+  color: #e0e0e0;
+  line-height: 1.75;
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+
+
+/* -------------------------------- */
+/* Responsividad                     */
+/* -------------------------------- */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-text hr {
+    margin: 10px auto 20px auto;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    max-width: 220px;
+  }
+}

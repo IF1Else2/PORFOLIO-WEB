@@ -1,0 +1,169 @@
+/* Estilo general del título principal */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #ff4081;
+  text-align: center;
+}
+
+/* Contenedor en columna para proyectos */
+.projects-column {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* Contenedor centrado para agrupar proyectos */
+.projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* Tarjeta individual de cada proyecto */
+.project-card {
+  width: 600px;
+  border-radius: 10px;
+  margin: 0px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Títulos dentro de cada tarjeta */
+.project-card h3 {
+  color: #ddd5d8;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* Contenedor de habilidades */
+.habilities-used {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Pastillas de tecnologías */
+.tech-pill {
+  background-color: #cc76b6;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.tech-pill:hover {
+  background-color: #b746bb;
+}
+
+/* Subtítulo general de la sección */
+h2 {
+  font-size: 2.5rem;
+  color: #ff4081;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+/* Fila de carruseles */
+.carousel-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+/* Imagen dentro del carrusel */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+/* Botones del carrusel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Botón izquierdo */
+.carousel-btn.prev {
+  left: 16px;
+}
+
+/* Botón derecho */
+.carousel-btn.next {
+  right: 16px;
+}
+
+/* Ajustes responsivos para tablets */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 480px) {
+  .carousel-container {
+    aspect-ratio: 4 / 3;
+  }
+
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
