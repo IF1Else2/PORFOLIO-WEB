@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.css"],
+  "sourcesContent": [".background-box {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(30,30,30,0.6);\r\n  z-index: -1; \r\n  border-radius: 0; \r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .content-box {\r\n    width: 95%;\r\n    padding: 30px 20px;\r\n  }\r\n  .content-box h1 {\r\n    font-size: 2.4rem;\r\n  }\r\n  .content-box p {\r\n    font-size: 1.1rem;\r\n  }\r\n}\r\n\r\n"],
+  "mappings": ";AAAA,CAAC;AACC,YAAU;AACV,OAAK;AACL,QAAM;AACN,SAAO;AACP,UAAQ;AACR,cAAY,KAAK,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC;AAC1B,WAAS;AACT,iBAAe;AACjB;AAEA,OAAO,CAAC,SAAS,EAAE;AACjB,GAAC;AACC,WAAO;AACP,aAAS,KAAK;AAChB;AACA,GAJC,YAIY;AACX,eAAW;AACb;AACA,GAPC,YAOY;AACX,eAAW;AACb;AACF;",
+  "names": []
+}
