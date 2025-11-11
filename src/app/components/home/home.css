@@ -1,6 +1,6 @@
-/* -------------------------------- */
-/* Estilos generales                */
-/* -------------------------------- */
+
+/* Estilos generales*/
+
 body {
   margin: 0;
   padding: 0;
@@ -16,21 +16,30 @@ body {
   padding: 2px 6px;
   border-radius: 5px;
 }
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
 
-/* -------------------------------- */
-/* Content Box                      */
-/* -------------------------------- */
+.scroll-anim.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Content Box*/
+
 .content-box {
-  width: 100%;                 /* ocupa todo el ancho */
-  margin: 0;                   /* sin márgenes laterales */
-  padding: 60px 20px;          /* espacio interno */
-  border-radius: 0;            /* bordes planos */
+  width: 100%;                
+  margin: 0;                  
+  padding: 60px 20px;          
+  border-radius: 0;            
   background: linear-gradient(
-    rgba(255, 64, 129, 0.2),   /* rosa semitransparente arriba */
-    rgba(255, 64, 129, 0.05)   /* rosa más claro abajo */
+    rgba(255, 64, 129, 0.2),   
+    rgba(255, 64, 129, 0.05)  
   );
-  box-shadow: none;            /* sin sombra */
-  text-align: center;          /* centrar texto e iconos */
+  box-shadow: none;          
+  text-align: center;          
 }
 
 .content-box:hover {
@@ -56,9 +65,9 @@ body {
   color: #e0e0e0;
 }
 
-/* -------------------------------- */
-/* Foto de perfil                   */
-/* -------------------------------- */
+
+/* Foto de perfil*/
+
 .profile-pic {
   width: 300px;
   height: 300px;
@@ -81,9 +90,9 @@ body {
   box-shadow: 0 8px 25px rgba(255,64,129,0.5);
 }
 
-/* -------------------------------- */
-/* Iconos tecnologías               */
-/* -------------------------------- */
+
+/* Iconos tecnologías*/
+
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
@@ -118,9 +127,9 @@ body {
   box-shadow: 0 8px 20px rgba(212,44,100,0.5);
 }
 
-/* -------------------------------- */
-/* MEDIA QUERIES                    */
-/* -------------------------------- */
+
+/* MEDIA QUERIES*/
+
 @media (max-width: 1024px) {
   .profile-pic {
     margin: -80px -80px 20px 20px;
