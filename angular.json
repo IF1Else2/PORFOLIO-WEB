@@ -49,7 +49,7 @@
                 }
               ],
               "outputHashing": "all",
-              "outputPath": "docs",
+              "outputPath": "docs/browser",
               "baseHref": "/PORFOLIO-WEB/"
             },
             "development": {
