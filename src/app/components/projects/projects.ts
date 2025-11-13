@@ -9,20 +9,20 @@ import { CommonModule } from '@angular/common';
 export class Projects {
    /** Carrusel del Proyecto 1 */
   projectImages: string[] = [
-    'assets/images/inicioCuidaBot.png',
-    'assets/images/configuracionCuidaBot.png',
+    'assets/inicioCuidaBot.png',
+    'assets/configuracionCuidaBot.png',
   ];
 
   /** Carrusel del Proyecto 2 */
   projectImages1: string[] = [
-    'assets/images/ir1.png',
-    'assets/images/ir22.png'
+    'assets/ir1.png',
+    'assets/ir22.png'
   ];
 
   /** Carrusel del Proyecto 3 */
   projectImages2: string[] = [
-    'assets/images/ch1.png',
-    'assets/images/ch2.png'
+    'assets/ch1.png',
+    'assets/ch2.png'
   ];
 
   /** Índices actuales de cada carrusel */
